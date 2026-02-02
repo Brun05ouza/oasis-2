@@ -18,7 +18,7 @@ export function FeatureCard({ icon: Icon, title, description, delay = 0 }: Featu
       transition={{ duration: 0.5, delay }}
       className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center"
     >
-      <div className="w-16 h-16 bg-gradient-to-br from-[#4CAF50] to-[#A5D6A7] rounded-full flex items-center justify-center mb-4">
+      <div className="w-16 h-16 bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6] rounded-full flex items-center justify-center mb-4">
         <Icon className="w-8 h-8 text-white" />
       </div>
       <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>

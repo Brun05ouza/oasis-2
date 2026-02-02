@@ -18,24 +18,24 @@ export function TestimonialCard({ name, avatar, text, delay = 0 }: TestimonialCa
       transition={{ duration: 0.5, delay }}
       className="bg-white rounded-2xl p-8 shadow-lg relative"
     >
-      <Quote className="absolute top-6 right-6 w-10 h-10 text-[#A5D6A7] opacity-30" />
-      
+      <Quote className="absolute top-6 right-6 w-10 h-10 text-[#1E3A8A] opacity-20" />
+
       <div className="flex items-center gap-4 mb-4">
-        <img 
-          src={avatar} 
+        <img
+          src={avatar}
           alt={name}
-          className="w-16 h-16 rounded-full object-cover ring-4 ring-[#A5D6A7]"
+          className="w-16 h-16 rounded-full object-cover ring-4 ring-[#F97316]"
         />
         <div>
           <h4 className="font-semibold text-gray-800">{name}</h4>
           <div className="flex gap-1 mt-1">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-[#FF5722] text-[#FF5722]" />
+              <Star key={i} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
             ))}
           </div>
         </div>
       </div>
-      
+
       <p className="text-gray-600 leading-relaxed italic">"{text}"</p>
     </motion.div>
   );

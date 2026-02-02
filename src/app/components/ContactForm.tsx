@@ -43,7 +43,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="Seu nome completo"
           required
-          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#4CAF50] focus:outline-none transition-colors"
+          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#10B981] focus:outline-none transition-colors"
         />
       </div>
 
@@ -56,7 +56,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="Seu melhor e-mail"
           required
-          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#4CAF50] focus:outline-none transition-colors"
+          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#10B981] focus:outline-none transition-colors"
         />
       </div>
 
@@ -69,7 +69,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="Telefone com WhatsApp"
           required
-          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#4CAF50] focus:outline-none transition-colors"
+          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#10B981] focus:outline-none transition-colors"
         />
       </div>
 
@@ -82,7 +82,7 @@ export function ContactForm() {
           placeholder="Conte-nos como podemos ajudar..."
           rows={4}
           required
-          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#4CAF50] focus:outline-none transition-colors resize-none"
+          className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-[#10B981] focus:outline-none transition-colors resize-none"
         />
       </div>
 

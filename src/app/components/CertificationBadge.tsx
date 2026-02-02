@@ -11,7 +11,7 @@ interface CertificationBadgeProps {
 
 export function CertificationBadge({ icon: Icon, label, tooltip, delay = 0 }: CertificationBadgeProps) {
   const [showTooltip, setShowTooltip] = useState(false);
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -24,13 +24,13 @@ export function CertificationBadge({ icon: Icon, label, tooltip, delay = 0 }: Ce
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-[#A5D6A7] cursor-pointer"
+        className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-[#F97316] cursor-pointer"
       >
-        <Icon className="w-10 h-10 text-[#4CAF50]" />
+        <Icon className="w-10 h-10 text-[#1E3A8A]" />
       </motion.div>
-      
+
       <p className="mt-3 text-sm font-medium text-gray-700">{label}</p>
-      
+
       {showTooltip && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
