@@ -24,9 +24,9 @@ export function CertificationBadge({ icon: Icon, label, tooltip, delay = 0 }: Ce
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-[#F97316] cursor-pointer"
+        className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-[#E8915B] cursor-pointer"
       >
-        <Icon className="w-10 h-10 text-[#1E3A8A]" />
+        <Icon className="w-10 h-10 text-[#1E3C58]" />
       </motion.div>
 
       <p className="mt-3 text-sm font-medium text-gray-700">{label}</p>
