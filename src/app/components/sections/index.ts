@@ -1,0 +1,10 @@
+export { default as HeaderSection } from './HeaderSection';
+export { default as HeroSection } from './HeroSection';
+export { default as BenefitsSection } from './BenefitsSection';
+export { default as GallerySection } from './GallerySection';
+export type { GalleryCategory } from './GallerySection';
+export { default as FloorPlansSection } from './FloorPlansSection';
+export { default as LocationSection } from './LocationSection';
+export { default as AboutSection } from './AboutSection';
+export { default as ContactFormSection } from './ContactFormSection';
+export { default as FooterSection } from './FooterSection';
