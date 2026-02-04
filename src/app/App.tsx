@@ -1687,7 +1687,7 @@ export default function App() {
                 alt="Gênesis Empreendimentos"
                 className="h-14 w-auto"
               />
-              <p className="text-gray-300 text-sm leading-7">
+              <p className="text-gray-300 text-sm leading-5">
                 A Gênesis Empreendimentos é sinônimo de excelência na transformação de cada projeto em uma história de sucesso e nossa principal missão é realizar sonhos.
               </p>
             </div>
@@ -1765,21 +1765,21 @@ export default function App() {
 
           {/* Informações Legais */}
           <div className="border-t border-gray-800 pt-10">
-            <div className="space-y-6">
-              <p className="text-gray-500 text-xs leading-7 text-center max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <p className="text-gray-500 text-[10px] leading-4 text-center max-w-5xl mx-auto">
                 Todas as imagens são meramente ilustrativas. O projeto arquitetônico, as numerações das unidades, as cores, os detalhes da fachada e as ilustrações artísticas poderão sofrer alterações. A decoração, os equipamentos da varanda, a mobília e o paisagismo são meras sugestões e não fazem parte das obrigações de entrega do imóvel. As unidades entregues e suas características, bem como o padrão de acabamento, estão discriminados no memorial descritivo arquivado no memorial de incorporação devidamente registrado no R-4 da matrícula 56515 no 2° Ofício de Registro de Imóveis de Nova Iguaçu. 1ª Circunscrição.
               </p>
               
-              <div className="space-y-3">
-                <p className="text-gray-500 text-xs text-center">
+              <div className="space-y-2">
+                <p className="text-gray-500 text-[10px] leading-4 text-center">
                   Autor do projeto: Claudius Arbes - CAU: A180818-5
                 </p>
-                <p className="text-gray-500 text-xs text-center">
+                <p className="text-gray-500 text-[10px] leading-4 text-center">
                   Responsável Técnico: Rodrigo Fonseca da Costa - CREA/RJ: 2001109575
                 </p>
               </div>
 
-              <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs pt-6">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-[10px] leading-4 pt-6">
                 <a href="#" className="text-gray-400 hover:text-[#E8915B] transition-colors">
                   Política de Privacidade
                 </a>
