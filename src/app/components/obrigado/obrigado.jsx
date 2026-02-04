@@ -12,7 +12,7 @@ export default function Obrigado() {
       {/* Background Image - mesma do hero */}
       <div className="absolute inset-0">
         <img
-          src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/FACHADA-HERO-1-1.jpg"
+          src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Design-sem-nome-1.jpg"
           alt="Oasis Residencial"
           className="w-full h-full object-cover object-center"
         />

@@ -1379,26 +1379,24 @@ export default function App() {
               
               {/* Card de Endereço */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-                <div className="p-3 md:p-4">
-                  <div className="flex items-center gap-2 md:gap-3 mb-3">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#E8915B] to-[#F0A574] rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                      <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-sm md:text-base font-bold text-[#1E3C58] mb-0.5">Oásis Residencial</h3>
-                      <p className="text-gray-600 text-xs leading-tight">
-                        Av. Ivani Vigne Babo, s/n<br />
-                        Bairro da Luz, Nova Iguaçu - RJ
-                      </p>
-                    </div>
+                <div className="p-3 md:p-4 flex items-center gap-2 md:gap-3">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#E8915B] to-[#F0A574] rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-sm md:text-base font-bold text-[#1E3C58] mb-0.5">Oásis Residencial</h3>
+                    <p className="text-gray-600 text-xs leading-tight">
+                      Av. Ivani Vigne Babo, s/n<br />
+                      Bairro da Luz, Nova Iguaçu - RJ
+                    </p>
                   </div>
                   <a
                     href="https://www.google.com/maps/dir/?api=1&destination=Av.+Luz,+698+-+Luz,+Nova+Iguaçu+-+RJ,+26256-180"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full px-3 py-2.5 bg-gradient-to-r from-[#E8915B] to-[#D67E4F] text-white rounded-lg font-bold text-xs md:text-sm shadow-md hover:shadow-lg hover:from-[#D67E4F] hover:to-[#B86C3D] transition-all text-center"
+                    className="px-4 py-2.5 bg-gradient-to-r from-[#E8915B] to-[#D67E4F] text-white rounded-lg font-bold text-xs md:text-sm shadow-md hover:shadow-lg hover:from-[#D67E4F] hover:to-[#B86C3D] transition-all whitespace-nowrap flex items-center gap-1.5"
                   >
-                    <MapPin className="w-3.5 h-3.5 inline-block mr-1.5" />
+                    <MapPin className="w-3.5 h-3.5" />
                     Ver Rota
                   </a>
                 </div>
@@ -1550,7 +1548,7 @@ export default function App() {
                   />
                 </div>
                 <img
-                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Icone-01-nivelA-1.png"
+                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Design-sem-nome-5-1.png"
                   alt="Nível A"
                   className="relative w-full h-full object-contain"
                 />
@@ -1569,7 +1567,7 @@ export default function App() {
                   />
                 </div>
                 <img
-                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Icone-01-pbqph-1.png"
+                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/PBQP-sem-fundo.png"
                   alt="PBQP-H"
                   className="relative w-full h-full object-contain"
                 />
@@ -1588,7 +1586,7 @@ export default function App() {
                   />
                 </div>
                 <img
-                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Icone-01-caixa1.png"
+                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/caixa-sem-fundo.png"
                   alt="Caixa"
                   className="relative w-full h-full object-contain"
                 />
@@ -1607,7 +1605,7 @@ export default function App() {
                   />
                 </div>
                 <img
-                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Icone-01-iso90011.png"
+                  src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/ISO-sem-fundo.png"
                   alt="ISO 9001"
                   className="relative w-full h-full object-contain"
                 />
@@ -1764,22 +1762,22 @@ export default function App() {
           </div>
 
           {/* Informações Legais */}
-          <div className="border-t border-gray-800 pt-10">
-            <div className="space-y-6">
-              <p className="text-gray-500 text-xs leading-7 text-center max-w-5xl mx-auto">
+          <div className="border-t border-gray-800 pt-6">
+            <div className="space-y-4">
+              <p className="text-gray-500 text-[10px] leading-relaxed text-center max-w-5xl mx-auto">
                 Todas as imagens são meramente ilustrativas. O projeto arquitetônico, as numerações das unidades, as cores, os detalhes da fachada e as ilustrações artísticas poderão sofrer alterações. A decoração, os equipamentos da varanda, a mobília e o paisagismo são meras sugestões e não fazem parte das obrigações de entrega do imóvel. As unidades entregues e suas características, bem como o padrão de acabamento, estão discriminados no memorial descritivo arquivado no memorial de incorporação devidamente registrado no R-4 da matrícula 56515 no 2° Ofício de Registro de Imóveis de Nova Iguaçu. 1ª Circunscrição.
               </p>
               
-              <div className="space-y-3">
-                <p className="text-gray-500 text-xs text-center">
-                  Autor do projeto: Claudius Arbes - CAU: A180818-5
+              <div className="space-y-1.5">
+                <p className="text-gray-500 text-[10px] text-center">
+                  Autora do projeto: Lalesca V. Rodrigues de Siqueira Guerreiro - CAU/RJ: 301474-6
                 </p>
-                <p className="text-gray-500 text-xs text-center">
+                <p className="text-gray-500 text-[10px] text-center">
                   Responsável Técnico: Rodrigo Fonseca da Costa - CREA/RJ: 2001109575
                 </p>
               </div>
 
-              <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-xs pt-6">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-3 text-[10px] pt-4">
                 <a href="#" className="text-gray-400 hover:text-[#E8915B] transition-colors">
                   Política de Privacidade
                 </a>
