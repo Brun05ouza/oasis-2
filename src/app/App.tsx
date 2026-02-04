@@ -555,19 +555,23 @@ export default function App() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/degrade-2-1.jpg"
+            src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/hero.jpg"
             alt="Oasis Residencial - Fachada"
             className="w-full h-full object-cover object-center scale-105"
             style={{ objectPosition: 'center 40%' }}
           />
+          {/* Overlay gradient para melhorar contraste */}
+          <div className="absolute inset-0 bg-gradient-to-l from-black/60 via-black/40 to-transparent"></div>
+          {/* Gradient de transição no rodapé */}
+          <div className="absolute bottom-0 left-0 w-full h-32 md:h-40 bg-gradient-to-t from-[#FFF1E6] to-transparent"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 w-full flex items-center justify-center min-h-screen">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 w-full flex items-center justify-end min-h-screen">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white z-10 text-center max-w-4xl"
+            className="text-white z-10 text-right max-w-2xl md:max-w-3xl"
           >
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -575,10 +579,10 @@ export default function App() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight px-2"
             >
-              <span className="block text-white drop-shadow-2xl mb-1 md:mb-2">
+              <span className="block text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] mb-1 md:mb-2" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}>
                 O Desfrutar de
               </span>
-              <span className="block bg-gradient-to-r from-[#E8915B] to-[#F0A574] bg-clip-text text-transparent drop-shadow-lg">
+              <span className="block bg-gradient-to-r from-[#E8915B] to-[#F0A574] bg-clip-text text-transparent drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 8px rgba(232,145,91,0.3)' }}>
                 Novos Começos
               </span>
             </motion.h1>
@@ -587,30 +591,30 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="max-w-3xl mx-auto mb-8 md:mb-10 px-4"
+              className="max-w-2xl mb-8 md:mb-10 px-2 ml-auto"
             >
-              <p className="text-lg xs:text-xl sm:text-2xl lg:text-3xl font-light text-white/95 drop-shadow-lg mb-3 md:mb-4 leading-relaxed">
+              <p className="text-lg xs:text-xl sm:text-2xl lg:text-3xl font-light text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-3 md:mb-4 leading-relaxed" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.5)' }}>
                 Viva a experiência de <span className="font-semibold text-white">novos começos</span>
               </p>
-              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-[#E8915B] to-transparent mx-auto my-4 md:my-6"></div>
-              <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white/85 leading-relaxed">
+              <div className="w-16 md:w-20 h-1 bg-gradient-to-l from-[#E8915B] to-transparent my-4 md:my-6 ml-auto"></div>
+              <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] leading-relaxed" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.5)' }}>
                 Um conceito inovador de bem-estar, onde <span className="font-semibold">conforto, segurança e lazer</span> se unem em perfeita harmonia para você e sua família
               </p>
             </motion.div>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4">
-              <Button variant="primary" size="lg" onClick={() => scrollToSection('formulario')} className="w-full sm:w-auto text-sm md:text-base">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-end items-end sm:items-center px-2">
+              <Button variant="primary" size="lg" onClick={() => scrollToSection('formulario')} className="w-full sm:w-auto text-sm md:text-base shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
                 Entrar em contato
               </Button>
               <motion.button
                 onClick={() => setPreviewModalOpen(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-12 h-12 md:w-14 md:h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors border-2 border-white/40 flex-shrink-0"
+                className="w-12 h-12 md:w-14 md:h-14 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/40 transition-colors border-2 border-white/60 flex-shrink-0 shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
                 aria-label="Visualizar projeto"
               >
                 <Eye className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </motion.button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-[#1E3C58] backdrop-blur-sm text-sm md:text-base" onClick={() => scrollToSection('plantas')}>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/20 border-white text-white hover:bg-white hover:text-[#1E3C58] backdrop-blur-sm text-sm md:text-base shadow-[0_4px_12px_rgba(0,0,0,0.4)]" onClick={() => scrollToSection('plantas')}>
                 Ver Tipologias
               </Button>
             </div>
@@ -619,7 +623,7 @@ export default function App() {
       </section>
 
       {/* Benefícios Diretos Section */}
-      <section id="imoveis" className="relative pt-20 md:pt-32 pb-24 md:pb-40 bg-gradient-to-b from-[#FFF1E6] via-[#FFF5EE] to-[#FFE8D9] overflow-hidden">
+      <section id="imoveis" className="relative pt-20 md:pt-32 pb-32 md:pb-48 bg-gradient-to-b from-[#FFF1E6] via-[#FFF5EE] to-[#FFE8D9] overflow-hidden">
         {/* Onda decorativa no topo do background */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
           <svg className="relative w-full h-16 md:h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
@@ -722,7 +726,7 @@ export default function App() {
         </div>
 
         {/* Onda de transição Benefícios → Galeria */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none z-0">
           <svg className="relative w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
             <path d="M0,50 C360,80 720,20 1080,50 C1260,65 1350,35 1440,50 L1440,100 L0,100 Z" fill="#FFF5F0" opacity="0.5" />
             <path d="M0,60 C360,90 720,30 1080,60 C1260,75 1350,45 1440,60 L1440,100 L0,100 Z" fill="#FFF5F0" />
@@ -1359,11 +1363,11 @@ export default function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white sticky top-8">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white sticky top-8 mb-4">
                 <iframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Luz,+698+-+Luz,+Nova+Iguaçu+-+RJ,+26256-180&zoom=15"
                   width="100%"
-                  height="650"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
@@ -1371,41 +1375,33 @@ export default function App() {
                   title="Localização Oasis Residencial"
                   className="relative z-0"
                 ></iframe>
-
-                {/* Overlay com endereço */}
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 }}
-                  className="absolute bottom-4 left-4 right-4 bg-white rounded-2xl shadow-2xl overflow-hidden"
-                >
-                  <div className="p-4 flex flex-col gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#E8915B] to-[#F0A574] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
-                        <MapPin className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900 text-base mb-1">Oásis Residencial</h4>
-                        <p className="text-gray-600 text-xs leading-relaxed">
-                          Av. Ivani Vigne Babo, s/n<br />
-                          Bairro da Luz, Nova Iguaçu - RJ
-                        </p>
-                      </div>
+              </div>
+              
+              {/* Card de Endereço */}
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div className="p-3 md:p-4">
+                  <div className="flex items-center gap-2 md:gap-3 mb-3">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#E8915B] to-[#F0A574] rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                      <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
-                    <motion.a
-                      href="https://www.google.com/maps/dir/?api=1&destination=Av.+Luz,+698+-+Luz,+Nova+Iguaçu+-+RJ,+26256-180"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="w-full px-4 py-2.5 bg-gradient-to-r from-[#E8915B] to-[#D67E4F] text-white rounded-xl font-bold text-sm shadow-lg hover:shadow-xl hover:from-[#D67E4F] hover:to-[#B86C3D] transition-all flex items-center justify-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      Ver Rota
-                    </motion.a>
+                    <div className="flex-1">
+                      <h3 className="text-sm md:text-base font-bold text-[#1E3C58] mb-0.5">Oásis Residencial</h3>
+                      <p className="text-gray-600 text-xs leading-tight">
+                        Av. Ivani Vigne Babo, s/n<br />
+                        Bairro da Luz, Nova Iguaçu - RJ
+                      </p>
+                    </div>
                   </div>
-                </motion.div>
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Av.+Luz,+698+-+Luz,+Nova+Iguaçu+-+RJ,+26256-180"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full px-3 py-2.5 bg-gradient-to-r from-[#E8915B] to-[#D67E4F] text-white rounded-lg font-bold text-xs md:text-sm shadow-md hover:shadow-lg hover:from-[#D67E4F] hover:to-[#B86C3D] transition-all text-center"
+                  >
+                    <MapPin className="w-3.5 h-3.5 inline-block mr-1.5" />
+                    Ver Rota
+                  </a>
+                </div>
               </div>
             </motion.div>
           </div>
