@@ -125,7 +125,7 @@ export default function AboutSection({ setVideoModalOpen }: AboutSectionProps) {
           <div className="relative bg-white border border-[#E8915B]/20 rounded-2xl p-6 text-center hover:shadow-xl hover:border-[#E8915B]/40 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
             <div className="relative w-20 h-20 mx-auto mb-4">
               <div className="absolute -inset-4 flex items-center justify-center opacity-40 pointer-events-none animate-spin" style={{ animationDuration: '20s' }}>
-                <img src="/assets/Ativo 2.svg" alt="" className="w-28 h-28 object-contain" />
+                <img src="/assets/Ativo-2.svg" alt="" className="w-28 h-28 object-contain" />
               </div>
               <img src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/Design-sem-nome-5-1.png" alt="Nível A" className="relative w-full h-full object-contain" />
             </div>
@@ -136,7 +136,7 @@ export default function AboutSection({ setVideoModalOpen }: AboutSectionProps) {
           <div className="relative bg-white border border-[#E8915B]/20 rounded-2xl p-6 text-center hover:shadow-xl hover:border-[#E8915B]/40 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
             <div className="relative w-20 h-20 mx-auto mb-4">
               <div className="absolute -inset-4 flex items-center justify-center opacity-40 pointer-events-none animate-spin" style={{ animationDuration: '20s' }}>
-                <img src="/assets/Ativo 2.svg" alt="" className="w-28 h-28 object-contain" />
+                <img src="/assets/Ativo-2.svg" alt="" className="w-28 h-28 object-contain" />
               </div>
               <img src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/PBQP-sem-fundo.png" alt="PBQP-H" className="relative w-full h-full object-contain" />
             </div>
@@ -147,7 +147,7 @@ export default function AboutSection({ setVideoModalOpen }: AboutSectionProps) {
           <div className="relative bg-white border border-[#E8915B]/20 rounded-2xl p-6 text-center hover:shadow-xl hover:border-[#E8915B]/40 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
             <div className="relative w-20 h-20 mx-auto mb-4">
               <div className="absolute -inset-4 flex items-center justify-center opacity-40 pointer-events-none animate-spin" style={{ animationDuration: '20s' }}>
-                <img src="/assets/Ativo 2.svg" alt="" className="w-28 h-28 object-contain" />
+                <img src="/assets/Ativo-2.svg" alt="" className="w-28 h-28 object-contain" />
               </div>
               <img src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/caixa-sem-fundo.png" alt="Caixa" className="relative w-full h-full object-contain" />
             </div>
@@ -158,7 +158,7 @@ export default function AboutSection({ setVideoModalOpen }: AboutSectionProps) {
           <div className="relative bg-white border border-[#E8915B]/20 rounded-2xl p-6 text-center hover:shadow-xl hover:border-[#E8915B]/40 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
             <div className="relative w-20 h-20 mx-auto mb-4">
               <div className="absolute -inset-4 flex items-center justify-center opacity-40 pointer-events-none animate-spin" style={{ animationDuration: '20s' }}>
-                <img src="/assets/Ativo 2.svg" alt="" className="w-28 h-28 object-contain" />
+                <img src="/assets/Ativo-2.svg" alt="" className="w-28 h-28 object-contain" />
               </div>
               <img src="https://wp.oasis2.com.br/wp-content/uploads/2026/02/ISO-sem-fundo.png" alt="ISO 9001" className="relative w-full h-full object-contain" />
             </div>

@@ -92,18 +92,9 @@ export default function FooterSection({ scrollToSection }: FooterSectionProps) {
         <div className="border-t border-gray-800 pt-6">
           <div className="space-y-4">
             <p className="text-gray-500 text-[10px] leading-4 text-center max-w-5xl mx-auto">
-              Todas as imagens são meramente ilustrativas. O projeto arquitetônico, as numerações das unidades, as cores, os detalhes da fachada e as ilustrações artísticas poderão sofrer alterações. A decoração, os equipamentos da varanda, a mobília e o paisagismo são meras sugestões e não fazem parte das obrigações de entrega do imóvel. As unidades entregues e suas características, bem como o padrão de acabamento, estão discriminados no memorial descritivo arquivado no memorial de incorporação devidamente registrado no R-4 da matrícula 56515 no 2° Ofício de Registro de Imóveis de Nova Iguaçu. 1ª Circunscrição.
+              Todas as imagens são meramente ilustrativas. O projeto arquitetônico, as numerações das unidades, as cores, os detalhes da fachada e as ilustrações artísticas poderão sofrer alterações. Responsável técnico do projeto: Lalesca V. Rodrigues de Siqueira Guerreiro, CAU/RJ: 301474-6. A decoração, os equipamentos da varanda, a mobília e o paisagismo são meras sugestões e não fazem parte das obrigações de entrega do imóvel. As unidades entregues e suas características, bem como o padrão de acabamento, estão discriminados no memorial descritivo arquivado no memorial de incorporação devidamente registrado na matrícula 63767 no Cartório do 2º OFICIO DE NOVA IGUAÇU.
             </p>
             
-            <div className="space-y-1.5">
-              <p className="text-gray-500 text-[10px] leading-4 text-center">
-                Autora do projeto: Lalesca V. Rodrigues de Siqueira Guerreiro - CAU/RJ: 301474-6
-              </p>
-              <p className="text-gray-500 text-[10px] leading-4 text-center">
-                Responsável Técnico: Rodrigo Fonseca da Costa - CREA/RJ: 2001109575
-              </p>
-            </div>
-
             <div className="flex flex-col md:flex-row justify-center items-center gap-3 text-[10px] leading-4 pt-4">
               <a href="#" className="text-gray-400 hover:text-[#E8915B] transition-colors">
                 Política de Privacidade

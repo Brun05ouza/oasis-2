@@ -29,7 +29,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
         className="absolute -top-20 -left-20 w-96 h-96 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <motion.div
@@ -37,7 +37,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         className="absolute -bottom-20 -right-20 w-96 h-96 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <motion.div
@@ -45,7 +45,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
         className="absolute top-1/3 right-1/4 w-64 h-64 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <motion.div
@@ -53,7 +53,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         className="absolute top-10 right-10 w-80 h-80 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <motion.div
@@ -61,7 +61,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         className="absolute bottom-20 left-20 w-72 h-72 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <motion.div
@@ -69,7 +69,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
         transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
         className="absolute -top-10 left-1/2 -translate-x-1/2 w-64 h-64 opacity-5 pointer-events-none"
       >
-        <img src="/assets/Ativo 2.svg" alt="" className="w-full h-full" />
+        <img src="/assets/Ativo-2.svg" alt="" className="w-full h-full" />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,7 +105,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
             className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-transparent"
           >
             <img
-              src="https://images.unsplash.com/photo-1758448511320-05d7d28f4298?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBmbG9vciUyMHBsYW58ZW58MXx8fHwxNzY5OTUyMDE4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={plantas2Quartos[0]}
               alt="Planta 2 quartos"
               className="w-full h-64 object-cover"
             />
@@ -151,7 +151,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
             className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-transparent"
           >
             <img
-              src="https://images.unsplash.com/photo-1654506012740-09321c969dc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBpbnRlcmlvciUyMGxpdmluZyUyMHJvb218ZW58MXx8fHwxNzcwMDE3MzE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={plantas3Quartos[0]}
               alt="Planta 3 quartos"
               className="w-full h-64 object-cover"
             />
@@ -197,7 +197,7 @@ export default function FloorPlansSection({ plantas2Quartos, plantas3Quartos, pl
             className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-transparent"
           >
             <img
-              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxwZW50aG91c2V8ZW58MHx8fHwxNzM4NTg4MTI2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={plantasCobertura[0]}
               alt="Cobertura"
               className="w-full h-64 object-cover"
             />
